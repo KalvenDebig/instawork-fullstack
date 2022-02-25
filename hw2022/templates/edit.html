@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+	    <script src="/static/js/jquery.min.js"></script>
+{#		<script src="/static/js/list.js" type="text/javascript" charset="utf-8"></script>#}
+	</head>
+	<body>
+		<div id="container">
+		    <div class="example-page">
+			    <div>
+			        <h1>Edit team members</h1>
+			    </div>
+		    	<div id="main">
+{#		      		<p class="note">Set small,location and role.</p>#}
+		     		<div class="c1">
+		       			<h2 style="float: left;">Info</h2>
+		        		<div id="lovely-things-list">
+                            <form action="/edit/" method="post">
+                                <table>
+                                    <input name="id" type="text" value="{{ data.id }}" style="display: none">
+                                    <tr>
+                                        <td><input type="text" name="FirstName" placeholder="FirstName" value="{{ data.FirstName }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="LastName" placeholder="LastName" value="{{ data.LastName }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="email" placeholder="charlene@instawork.com" value="{{ data.email }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name='number' placeholder="415-310-1619" value="{{ data.number }}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Role</td>
+                                    </tr>
+                                    {% if data.choose == 'admin' %}
+                                        <tr>
+                                            <td>Regular-cantdelete members <input class="cc" name="z1" type="radio" value="regular"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Admin-Can delete members <input class="cc" name="z1" type="radio" value="admin" checked="checked"></td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td>Regular-cantdelete members <input class="cc" name="z1" type="radio" value="regular"  checked="checked"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Admin-Can delete members <input class="cc" name="z1" type="radio" value="admin"></td>
+                                        </tr>
+                                    {% endif %}
+                                </table>
+                                <input type="text" id='choose' name="choose" style="display: none;">
+                                <a href="/delinfo/?id={{ data.id }}" id="del" type="button"><input type="button" value="Delete"></a><input type="submit" value="Save">
+                            </form>
+		 				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(".cc").click(function () {
+        $("#choose").val($(this).val());
+    })
+</script>
