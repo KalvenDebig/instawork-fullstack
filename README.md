@@ -1,7 +1,8 @@
 # instawork-fullstack
 
 ## Run this project
-### Type following query in terminal
+### First move into hm2022 folder
+### Then type following query in terminal
 ### python manage.py runserver
 ### Then this project will run on port 8000 at localhost
 
