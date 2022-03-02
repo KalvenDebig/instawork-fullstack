@@ -1,10 +1,10 @@
 # instawork-fullstack
 
 ## Run this project
-### First move into hm2022 folder
+### First move into instawork-fullstack/hm2022 folder
 ### Then type following query in terminal
 ### python manage.py runserver
-### Then this project will run on port 8000 at localhost
+### Then this project will run on port 8000 at your localhost
 
 ## Backend API
 ### Name: Info
