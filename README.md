@@ -1,5 +1,9 @@
 # instawork-fullstack
 
+## To run this project
+## Type following query in terminal
+## python manage.py runserver
+
 ## Backend API
 ### Name: Info
 ### Primary key: ID
