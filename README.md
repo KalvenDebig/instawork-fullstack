@@ -1,8 +1,9 @@
 # instawork-fullstack
 
-## To run this project
+## Run this project
 ### Type following query in terminal
 ### python manage.py runserver
+### Then this project will run on port 8000 at localhost
 
 ## Backend API
 ### Name: Info
