@@ -1,4 +1,8 @@
 # instawork-fullstack
+## This is a project for instawork coop interview
+
+**Version 1.0.0** 
+
 
 ## Run this project
 ### First move into instawork-fullstack/hm2022 folder
