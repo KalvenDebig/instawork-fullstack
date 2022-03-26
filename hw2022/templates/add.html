@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+		<script src="/static/js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+		    <div class="example-page">
+			    <div>
+			        <h1>Add a team members</h1>
+			    </div>
+		    	<div id="main">
+		      		<p class="note">Set small,location and role.</p>
+
+		     		<div class="c1">
+		       			<h2 style="float: left;">Info</h2>
+		        		<div id="lovely-things-list">
+                            <form action="/add/" method="post">
+                                <table>
+                                    <tr>
+                                        <td><input type="text" name="FirstName" placeholder="FirstName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="LastName" placeholder="LastName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="email" placeholder="charlene@instawork.com"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name='number' placeholder="415-310-1619"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Role</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Regular-cantdelete members <input class="cc" name="z1" type="radio" value="regular"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Admin-Can delete members <input class="cc" name="z1" type="radio" value="admin"></td>
+                                    </tr>
+                                </table>
+                                <input type="text" id='choose' name="choose" style="display: none;">
+                                <input type="submit" value="Save">
+                            </form>
+		 				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(".cc").click(function () {
+        $("#choose").val($(this).val());
+    })
+</script>
